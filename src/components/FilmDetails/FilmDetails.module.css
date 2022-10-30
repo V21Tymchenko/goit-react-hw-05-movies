@@ -1,0 +1,91 @@
+.sectionFilm {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.serchContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.goBack {
+  display: inline-block;
+  padding-right: 18px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+.goBack:hover,
+.goBack:active {
+  background-color: #ccc;
+  color: #1a191f;
+}
+.sectionDetails {
+  vertical-align: middle;
+  margin: 0 15px;
+}
+.mivieContainer {
+  margin: 0 auto;
+}
+.detailsImg {
+  margin: 0 auto;
+  display: block;
+  width: 425px;
+  height: 540px;
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+.detailsTitle {
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-size: 38px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.detailsText {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.detailsScore_span {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 15px;
+}
+.detailsSecont_title {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.detailsDescription {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
+}
+.more {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.link {
+  display: block;
+  padding: 20px 35px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+.link:hover,
+.link:active {
+  background-color: #ccc;
+  color: #1a191f;
+}

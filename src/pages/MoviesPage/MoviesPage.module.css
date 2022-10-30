@@ -1,0 +1,199 @@
+.SearchInput {
+  width: 530px;
+  height: 40px;
+  font-size: 20px;
+  background: #7f7f7f;
+  padding-left: 80px;
+  color: black;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  transition: all 750ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.SearchInput:hover,
+.SearchInput:focus {
+  outline: none;
+  background: #ffffff;
+}
+
+.SearchInput::placeholder {
+  color: black;
+}
+.SearchForm {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.SearchSection {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.SearchList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.SearchButton {
+  position: absolute;
+  top: 0;
+  left: 270px;
+  background: #7f7f7f;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.SearchInput:focus,
+.SearchInput:hover {
+  outline: none;
+  background: #ffffff;
+}
+
+.SearchItem {
+  position: relative;
+  width: 330px;
+  height: 490px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.SearchText {
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff5f1;
+  line-height: 1.3;
+  text-align: center;
+}
+.SearchHoverText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 310px;
+  min-height: 470px;
+  padding: 10px;
+  pointer-events: none;
+  transform: translateY(100%);
+  background-color: rgb(35 34 34 / 89%);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SearchItem:hover .SearchHoverText {
+  transform: translateY(0%);
+}
+.SearchButton:hover .searchIcon,
+.SearchButton:focus .searchIcon {
+  transform: scale(1.5);
+  fill: #fff;
+}
+.searchIcon {
+  transition: all 750ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.LoadMore {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buttonShadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: rgba(173, 7, 7, 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.buttonEdge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    rgb(138, 0, 0) 0%,
+    rgb(184, 35, 35) 8%,
+    rgb(250, 3, 3) 92%,
+    rgb(82, 0, 0) 100%
+  );
+}
+
+.buttonFront {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: hsl(4deg 100% 48%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.LoadMore:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.LoadMore:hover .buttonFront {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.LoadMore:active .buttonFront {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.LoadMore:hover .buttonShadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.LoadMore:active .buttonShadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.LoadMore:focus:not(:focus-visible) {
+  outline: none;
+}
+.SearchInput:hover .SearchButton,
+.SearchInput:focus .SearchButton {
+  outline: none;
+  background-color: #ffffff;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}

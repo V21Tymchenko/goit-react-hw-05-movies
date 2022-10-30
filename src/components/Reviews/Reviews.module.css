@@ -1,0 +1,27 @@
+.noReviews {
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+  color: #ffffff;
+  line-height: 1.5;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.reviewsText_white {
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+  color: #ffffff;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.reviewsText {
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.3;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
