@@ -8,7 +8,7 @@ export function FilmDetails({ films }) {
   const location = useLocation();
   const locationFrom =
     location?.state?.from?.pathname + location?.state?.from?.search;
-
+  console.log(location);
   return (
     <section className={s.sectionFilm}>
       <div className={s.serchContainer}>
@@ -47,12 +47,24 @@ export function FilmDetails({ films }) {
               <h3 className={s.detailsSecont_title}>Additional information:</h3>
               <ul className={s.more}>
                 <li>
-                  <NavLink to="cast" className={s.link}>
+                  <NavLink
+                    to="cast"
+                    className={({ isActive }) =>
+                      isActive ? [s.active] : [s.link]
+                    }
+                    state={{ from: location.state.from ?? '/' }}
+                  >
                     Cast
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="reviews" className={s.link}>
+                  <NavLink
+                    to="reviews"
+                    className={({ isActive }) =>
+                      isActive ? [s.active] : [s.link]
+                    }
+                    state={{ from: location.state.from }}
+                  >
                     Reviews
                   </NavLink>
                 </li>

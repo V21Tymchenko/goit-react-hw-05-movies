@@ -5,6 +5,13 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.StyledLink:hover,
+.StyledLink:focus {
+  color: red;
+  text-shadow: 1px 1px 2px red;
+  border-bottom: 1px solid red;
+}
+
 .activeLink {
   font-family: 'Helvetica Neue', sans-serif;
   font-size: 20px;
